@@ -13,14 +13,14 @@ return new class extends Migration
     {
         Schema::create('clientes', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('apellido');
-            $table->string('doc_identidad')->unique();
-            $table->string('telefono');
-            $table->foreignId('user_id')->unsigned();
+            $table->string('tipo_documento');
+            $table->string('numero_documento')->unique();
+            $table->string('datos');
+            $table->string('telefono')->unique();
+            $table->string('email')->unique();
+            $table->string('password')->nullable();
+            $table->string('username');
             $table->timestamps();
-            //CREAMOS LA LLAVE FORANEA
-            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
 
             UserSeeder::class,
             CategoriaSeeder::class,
-            InventarioSeeder::class,
+            
             ClienteSeeder::class,
             ProductoSeeder::class,
             VentaSeeder::class,
@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
             ProductoMovimientoSeeder::class,
             ReclamoSeeder::class,
             ComprobanteSeeder::class,
+            ContactoSeeder::class,
 
             
         ]);

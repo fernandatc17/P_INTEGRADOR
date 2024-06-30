@@ -17,7 +17,7 @@ return new class extends Migration
             $table->date('fecha_venta');
             $table->decimal('monto');
             $table->string('metodo_pago');
-            $table->boolean('estado')->default(true);
+
             $table->timestamps();
             //CREAMOS LA LLAVE FORANEA
             $table->foreign('cliente_id')->references('id')->on('clientes');

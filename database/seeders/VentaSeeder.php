@@ -18,7 +18,6 @@ class VentaSeeder extends Seeder
             'fecha_venta' => now(),
             'monto' => 150.00,
             'metodo_pago' => 'Tarjeta de Credito',
-            'estado' => true,
         ]);
     }
 }
