@@ -14,7 +14,7 @@ class ProductoSeeder extends Seeder
     public function run(): void
     {
  
-                // Laptops
+        // Laptops
         Producto::create([
             'nombre' => 'Laptop Dell XPS 13',
             'descripcion' => 'Ultrabook con pantalla de 13 pulgadas y procesador Intel i7',
@@ -23,7 +23,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Dell',
             'categoria_id' => 1,
             'imagen' => 'dell_xps_13.png',
-            'especificacion' => '8GB RAM, 256GB SSD, Windows 10'
+            'especificacion' => 'Laptop Dell XPS 13 con procesador Intel Core i7-1165G7, 16GB de RAM, SSD de 512GB, pantalla táctil 13.4", resolución 1920x1200, gráficos Intel Iris Xe, Windows 10 Home'
         ]);
 
         Producto::create([
@@ -34,7 +34,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Apple',
             'categoria_id' => 1,
             'imagen' => 'macbook_air.png',
-            'especificacion' => '8GB RAM, 256GB SSD, macOS Big Sur'
+            'especificacion' => 'MacBook Air con procesador Apple M1, 8GB de RAM, SSD de 256GB, pantalla 13.3", resolución 2560x1600, gráficos Apple GPU, macOS Big Sur.'
         ]);
 
         Producto::create([
@@ -45,7 +45,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'HP',
             'categoria_id' => 1,
             'imagen' => 'hp_spectre_x360.png',
-            'especificacion' => '16GB RAM, 512GB SSD, Windows 10'
+            'especificacion' => 'HP Spectre x360 con procesador Intel Core i7-1165G7, 16GB de RAM, SSD de 1TB, pantalla táctil 13.3", resolución 1920x1080, gráficos Intel Iris Xe, Windows 10 Home '
         ]);
 
         Producto::create([
@@ -56,7 +56,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Lenovo',
             'categoria_id' => 1,
             'imagen' => 'thinkpad_x1_carbon.png',
-            'especificacion' => '16GB RAM, 512GB SSD, Windows 10 Pro'
+            'especificacion' => 'Lenovo ThinkPad X1 Carbon con procesador Intel Core i7-1165G7, 16GB de RAM, SSD de 1TB, pantalla 14", resolución 1920x1080, gráficos Intel Iris Xe, Windows 10 Pro.'
         ]);
 
         Producto::create([
@@ -67,7 +67,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Asus',
             'categoria_id' => 1,
             'imagen' => 'asus_rog_zephyrus.png',
-            'especificacion' => '16GB RAM, 1TB SSD, Windows 10'
+            'especificacion' => 'Asus ROG Zephyrus con procesador AMD Ryzen 9 5900HS, 16GB de RAM, SSD de 1TB, pantalla 14", resolución 2560x1440, gráficos NVIDIA GeForce RTX 3070, Windows 10 Home'
         ]);
 
         // Componentes
@@ -79,7 +79,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Intel',
             'categoria_id' => 2,
             'imagen' => 'intel_i9_10900k.png',
-            'especificacion' => '10 núcleos, 3.7GHz'
+            'especificacion' => 'Procesador Intel i9-10900K con 10 núcleos, 20 hilos, frecuencia base de 3.7 GHz, turbo boost hasta 5.3 GHz, 125W de TDP, compatible con socket LGA 1200'
         ]);
 
         Producto::create([
@@ -90,7 +90,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'ASUS',
             'categoria_id' => 2,
             'imagen' => 'asus_rog_strix_z490-e.png',
-            'especificacion' => 'Soporta DDR4, PCIe 3.0'
+            'especificacion' => 'Tarjeta Madre ASUS ROG STRIX Z490-E con socket LGA 1200, soporte para procesadores Intel Core 10th Gen, memoria DDR4 hasta 128GB, PCIe 3.0 y 4.0, USB 3.2 Gen 2x2, Wi-Fi 6'
         ]);
 
         Producto::create([
@@ -101,7 +101,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Corsair',
             'categoria_id' => 2,
             'imagen' => 'corsair_vengeance_16gb.png',
-            'especificacion' => '3200MHz, CL16'
+            'especificacion' => 'Memoria RAM Corsair Vengeance 16GB con módulos DDR4 de 3200MHz, latencia CL16, compatible con placas base Intel y AMD, disipadores de calor anodizados'
         ]);
 
         Producto::create([
@@ -112,7 +112,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'NVIDIA',
             'categoria_id' => 2,
             'imagen' => 'nvidia_rtx_3080.png',
-            'especificacion' => '10GB GDDR6X'
+            'especificacion' => 'Tarjeta Gráfica NVIDIA RTX 3080 con 10GB de GDDR6X, 8704 núcleos CUDA, reloj base de 1440 MHz, reloj boost de 1710 MHz, interfaz PCIe 4.0, HDMI 2.1 y DisplayPort 1.4a'
         ]);
 
         Producto::create([
@@ -123,7 +123,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Samsung',
             'categoria_id' => 2,
             'imagen' => 'samsung_970_evo.png',
-            'especificacion' => '3500MB/s lectura, 2500MB/s escritura'
+            'especificacion' => 'SSD Samsung 970 EVO 1TB con interfaz NVMe PCIe 3.0 x4, velocidad de lectura secuencial de 3500 MB/s, velocidad de escritura secuencial de 3300 MB/s, M.2 2280.'
         ]);
 
         // Impresoras
@@ -135,7 +135,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'HP',
             'categoria_id' => 3,
             'imagen' => 'hp_laserjet_pro.png',
-            'especificacion' => '600 dpi, 30 ppm'
+            'especificacion' => 'Impresora HP LaserJet Pro con tecnología laser, velocidad de impresión de 20 ppm, resolución de 1200x1200 dpi, conectividad USB 2.0 y Wi-Fi, capacidad de papelera de 250 hojas'
         ]);
 
         Producto::create([
@@ -146,7 +146,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Epson',
             'categoria_id' => 3,
             'imagen' => 'epson_ecotank.png',
-            'especificacion' => '4800 dpi, Wi-Fi'
+            'especificacion' => 'Impresora Epson EcoTank con sistema de tanques de tinta, velocidad de impresión de 33 ppm, resolución de 5760x1440 dpi, conectividad USB y Wi-Fi, capacidad de papelera de 250 hojas'
         ]);
 
         Producto::create([
@@ -157,7 +157,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Canon',
             'categoria_id' => 3,
             'imagen' => 'canon_pixma.png',
-            'especificacion' => '4800 dpi, Escáner y Copiadora'
+            'especificacion' => 'Impresora Canon PIXMA con tecnología inkjet, velocidad de impresión de 8.8 ppm, resolución de 4800x1200 dpi, conectividad USB y Wi-Fi, capacidad de papelera de 100 hojas'
         ]);
 
         Producto::create([
@@ -168,7 +168,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Brother',
             'categoria_id' => 3,
             'imagen' => 'brother_hl_l2350dw.png',
-            'especificacion' => '1200 dpi, 32 ppm'
+            'especificacion' => 'Impresora Brother HL-L2350DW con tecnología laser, velocidad de impresión de 30 ppm, resolución de 2400x600 dpi, conectividad USB y Wi-Fi, capacidad de papelera de 250 hojas'
         ]);
 
         Producto::create([
@@ -179,7 +179,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Samsung',
             'categoria_id' => 3,
             'imagen' => 'samsung_xpress.png',
-            'especificacion' => '2400 dpi, Wi-Fi'
+            'especificacion' => 'Impresora Samsung Xpress con tecnología laser, velocidad de impresión de 21 ppm, resolución de 1200x1200 dpi, conectividad USB y Wi-Fi, capacidad de papelera de 150 hojas'
         ]);
 
         // Periféricos
@@ -191,7 +191,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Corsair',
             'categoria_id' => 4,
             'imagen' => 'corsair_k95.png',
-            'especificacion' => 'Cherry MX, Iluminación RGB'
+            'especificacion' => 'Teclado Mecánico Corsair K95 con switches Cherry MX RGB, iluminación RGB, 104 teclas, teclado numérico, 6 teclas macro dedicadas, conectividad USB y USB passthrough.'
         ]);
 
         Producto::create([
@@ -202,7 +202,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Logitech',
             'categoria_id' => 4,
             'imagen' => 'logitech_mx_master_3.png',
-            'especificacion' => '4000 DPI, Bluetooth y USB'
+            'especificacion' => 'Ratón Logitech MX Master 3 con sensor Darkfield de 4000 DPI, 7 botones programables, rueda de desplazamiento MagSpeed, conectividad Bluetooth y USB, batería de hasta 70 días.'
         ]);
 
         Producto::create([
@@ -213,7 +213,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Dell',
             'categoria_id' => 4,
             'imagen' => 'dell_ultrasharp_27.png',
-            'especificacion' => '3840x2160, IPS'
+            'especificacion' =>'Monitor Dell UltraSharp 27" con resolución 2560x1440, panel IPS, tiempo de respuesta de 6 ms, conectividad HDMI, DisplayPort y USB-C, ajustes de altura y giro.'
         ]);
 
         Producto::create([
@@ -224,7 +224,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'HyperX',
             'categoria_id' => 4,
             'imagen' => 'hyperx_cloud_ii.png',
-            'especificacion' => 'Sonido 7.1, Micrófono desmontable'
+            'especificacion' => 'Auriculares HyperX Cloud II con diadema ajustable, almohadillas de memoria foam, sonido 7.1 virtual, micrófono con cancelación de ruido, conectividad USB y 3.5mm.'
         ]);
 
         Producto::create([
@@ -235,7 +235,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Logitech',
             'categoria_id' => 4,
             'imagen' => 'logitech_c920.png',
-            'especificacion' => '1080p, Micrófono estéreo'
+            'especificacion' => 'Webcam Logitech C920 con resolución 1080p a 30 fps, autofocus, micrófonos estéreo, conectividad USB 3.0, compatible con Skype, Zoom y otras plataformas de videoconferencia.'
         ]);
 
         // Store
@@ -247,7 +247,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Seagate',
             'categoria_id' => 5,
             'imagen' => 'seagate_2tb.png',
-            'especificacion' => '2TB, USB 3.0'
+            'especificacion' => 'Disco Duro Externo Seagate 2TB con interfaz USB 3.0, velocidad de transferencia de hasta 120 MB/s, diseño resistente, compatible con Windows y Mac.'
         ]);
 
         Producto::create([
@@ -258,7 +258,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Samsung',
             'categoria_id' => 5,
             'imagen' => 'samsung_t5_1tb.png',
-            'especificacion' => '1TB, USB 3.1'
+            'especificacion' => 'SSD Externo Samsung T5 1TB con interfaz USB 3.1 Gen 2, velocidad de lectura de 540 MB/s, velocidad de escritura de 520 MB/s, diseño compacto y resistente, compatible con Windows, Mac y Android.'
         ]);
 
         Producto::create([
@@ -269,7 +269,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Kingston',
             'categoria_id' => 5,
             'imagen' => 'kingston_64gb.png',
-            'especificacion' => '64GB, USB 3.0'
+            'especificacion' => 'Memoria USB Kingston 64GB con interfaz USB 3.2 Gen 1, velocidad de lectura de 100 MB/s, velocidad de escritura de 40 MB/s, diseño resistente, compatible con Windows, Mac y Linux.'
         ]);
 
         Producto::create([
@@ -280,7 +280,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'SanDisk',
             'categoria_id' => 5,
             'imagen' => 'sandisk_128gb.png',
-            'especificacion' => '128GB, UHS-I'
+            'especificacion' => 'Tarjeta SD SanDisk 128GB con clase de velocidad U3, velocidad de lectura de 100 MB/s, velocidad de escritura de 90 MB/s, compatible con cámaras y dispositivos con ranura SD.'
         ]);
 
         Producto::create([
@@ -291,7 +291,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Synology',
             'categoria_id' => 5,
             'imagen' => 'synology_ds220.png',
-            'especificacion' => '2 bahías, 1GB RAM, Gigabit Ethernet'
+            'especificacion' => 'NAS Synology DS220+ con procesador Intel Celeron J4025, 2GB de RAM, capacidad de expansión de 2 discos, interfaz Gigabit Ethernet, soporte para RAID 0, 1 y JBOD, sistema operativo DSM.'
         ]);
 
         // Redes
@@ -303,7 +303,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'TP-Link',
             'categoria_id' => 6,
             'imagen' => 'tplink_archer_ax6000.png',
-            'especificacion' => 'Wi-Fi 6, 8 antenas, 2.5 Gbps'
+            'especificacion' => 'Router TP-Link Archer AX6000 con tecnología Wi-Fi 6, velocidad de hasta 6000 Mbps, 8 antenas externas, 1.5GHz de CPU, 4 puertos Gigabit Ethernet, 1 puerto WAN/LAN 2.5G, MU-MIMO y OFDMA.'
         ]);
 
         Producto::create([
@@ -314,7 +314,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Netgear',
             'categoria_id' => 6,
             'imagen' => 'netgear_gs108.png',
-            'especificacion' => '8 puertos Gigabit, Plug and Play'
+            'especificacion' => 'Switch Netgear GS108 con 8 puertos Gigabit Ethernet, velocidad de 2000 Mbps, sin bloqueo, diseño sin ventilador, gestión de energía IEEE 802.3az, compatible con VLAN y QoS.'
         ]);
 
         Producto::create([
@@ -325,7 +325,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'Generic',
             'categoria_id' => 6,
             'imagen' => 'ethernet_cat6_10m.png',
-            'especificacion' => '10 metros, UTP, Cat 6'
+            'especificacion' => 'Cable Ethernet Cat 6 10m con conectores RJ45, velocidad de hasta 10 Gbps, frecuencia de hasta 250 MHz, diseño resistente, compatible con redes Ethernet 10/100/1000/10GBASE-T.'
         ]);
 
         Producto::create([
@@ -336,7 +336,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'TP-Link',
             'categoria_id' => 6,
             'imagen' => 'tplink_ac600.png',
-            'especificacion' => 'Dual Band, USB 2.0'
+            'especificacion' => 'Adaptador Wi-Fi USB TP-Link AC600 con velocidad de hasta 300 Mbps en 2.4GHz y 300 Mbps en 5GHz, compatibilidad con Windows, Mac y Linux, antena omnidireccional.'
         ]);
 
         Producto::create([
@@ -347,7 +347,7 @@ class ProductoSeeder extends Seeder
             'marca' => 'TP-Link',
             'categoria_id' => 6,
             'imagen' => 'tplink_re450.png',
-            'especificacion' => 'AC1750, 3 antenas'
+            'especificacion' => 'Extensor de Red TP-Link RE450 con tecnología Wi-Fi 5, velocidad de hasta 1750 Mbps, 4 antenas externas, compatibilidad con WPS, Ethernet passthrough, gestión de energía ECO.'
         ]);
 
     }
