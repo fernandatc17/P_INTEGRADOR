@@ -11,7 +11,8 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">{{ __('Create') }} Producto Movimiento</span>
+                        <br>
+                        <center><h3 style="color:red" class="card-title">Registrar Movimiento</h3></center>
                     </div>
                     <div class="card-body bg-white">
                         <form method="POST" action="{{ route('producto-movimientos.store') }}"  role="form" enctype="multipart/form-data">

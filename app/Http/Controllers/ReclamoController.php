@@ -39,8 +39,9 @@ class ReclamoController extends Controller
     {
         Reclamo::create($request->validated());
 
-        return Redirect::route('reclamos.index')
-            ->with('success', 'Reclamo created successfully.');
+        
+        return Redirect::route('reclamos.create')
+            ->with('success', 'Reclamo creado exitosamente.');
     }
 
     /**

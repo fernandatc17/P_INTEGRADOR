@@ -11,8 +11,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
-
-
+                            <br>
                             <span id="card_title">
                                 <a href="{{ route('categorias.index') }}"   data-placement="left">
                                   Categoria
@@ -48,6 +47,7 @@
                                   Reclamos
                                 </a>
                             </span>
+                            <br><br>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
@@ -84,7 +84,7 @@
                                             <td>
                                                 <form action="{{ route('reclamos.destroy', $reclamo->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-primary " href="{{ route('reclamos.show', $reclamo->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('reclamos.edit', $reclamo->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                    
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm" onclick="event.preventDefault(); confirm('Are you sure to delete?') ? this.closest('form').submit() : false;"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>

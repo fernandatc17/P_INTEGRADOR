@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
                         <div class="float-left">
-                            <span class="card-title">{{ __('Show') }} Producto Movimiento</span>
+                            <span class="card-title">Mostrar los Movimientos del Producto</span>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-primary btn-sm" href="{{ route('producto-movimientos.index') }}"> {{ __('Back') }}</a>

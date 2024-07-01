@@ -39,7 +39,7 @@
 								<a class="review-link" href="#">10 Opinion(s) | Agrega tu opinión</a>
 							</div>
 							<div>
-								<h3 class="product-price">$ {{ $producto->stock }}.00</h3>
+								<h3 class="product-price">$ {{ $producto->precio }}.00</h3>
 								<span class="product-available">In Stock</span>
 							</div>
 							<p>{{ $producto->descripcion }}</p>

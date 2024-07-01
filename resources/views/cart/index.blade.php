@@ -84,6 +84,57 @@
                     </tbody>
                 </table>
             </div>
+            <div class="col-md-7">
+                <!-- Billing Details -->
+                <div class="billing-details">
+                    <div class="section-title">
+                        <br><br><br>
+                        <h3 class="title">Datos del cliente</h3>
+                    </div>
+                
+                    <div class="form-group">
+                        <input class="input" type="text" name="first-name" placeholder="First Name">
+                    </div>
+                
+                    <div class="form-group">
+                        <input class="input" type="email" name="email" placeholder="Email">
+                    </div>
+                
+                    <div class="form-group">
+                        <input class="input" type="tel" name="tel" placeholder="Telephone">
+                    </div>
+                    <div class="form-group">
+            
+                        <select class="input" name="tipo_documento" id="tipo_documento">
+                            <option value="DNI">DNI</option>
+                            <option value="PASAPORTE">Pasaporte</option>
+                            <option value="CARNET DE EXTRANJERIA">Carnet de Extranjería</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input class="input" type="text" name="numero_doc" placeholder="Numero Documento">
+                    </div>
+                
+                    
+                    <div class="form-group">
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="create-account">
+                            <label for="create-account">
+                                <span></span>
+                                ¿Crear una cuenta?
+                            </label>
+                            <div class="caption">
+                                <p>Introduce tu contraseña para tu cuenta</p>
+                                <input class="input" type="password" name="password" placeholder="Ingresa tu Password">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Billing Details -->              
+            </div>
+            
+
+
 
             <!-- Order Details -->
             <div class="col-md-5 order-details">

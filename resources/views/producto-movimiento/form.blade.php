@@ -8,7 +8,12 @@
         </div>
         <div class="form-group mb-2 mb20">
             <label for="tipo" class="form-label">{{ __('Tipo') }}</label>
-            <input type="text" name="tipo" class="form-control @error('tipo') is-invalid @enderror" value="{{ old('tipo', $productoMovimiento?->tipo) }}" id="tipo" placeholder="Tipo">
+            <!-- <input type="text" name="tipo" class="form-control @error('tipo') is-invalid @enderror" value="{{ old('tipo', $productoMovimiento?->tipo) }}" id="tipo" placeholder="Tipo"> -->
+            <select name="tipo" class="form-control @error('tipo') is-invalid @enderror" value="{{ old('tipo', $productoMovimiento?->tipo) }}" id="tipo" placeholder="Tipo">
+                <option value="">Seleccion</option>
+			    <option value="Entrada">Entrada</option>
+                <option value="Entrada">Salida</option>
+            </select>
             {!! $errors->first('tipo', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">

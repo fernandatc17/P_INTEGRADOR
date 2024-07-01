@@ -5,13 +5,13 @@
 @endsection
 
 @section('content')
-    <section class="content container-fluid">
+    <section class="content container">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
-                        <div class="float-left">
-                            <span class="card-title">{{ __('Show') }} Reclamo</span>
+                        <div >
+                            <center><h3 class="card-title">Show Reclamo</h3></center>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-primary btn-sm" href="{{ route('reclamos.index') }}"> {{ __('Back') }}</a>

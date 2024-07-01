@@ -39,7 +39,7 @@ class ContactoController extends Controller
     {
         Contacto::create($request->validated());
 
-        return Redirect::route('contactos.index')
+        return Redirect::route('contactos.create')
             ->with('success', 'Contacto created successfully.');
     }
 

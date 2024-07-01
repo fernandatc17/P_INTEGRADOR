@@ -51,10 +51,12 @@
                             <div class="float-right">
                                 <br>
                                 <a href="{{ route('producto-movimientos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  Crear Nuevo
                                 </a>
                             </div>
+                            
                         </div>
+                        <br><br>
                     </div>
                     @if ($message = Session::get('success'))
                         <div class="alert alert-success m-4">
