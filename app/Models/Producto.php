@@ -29,7 +29,7 @@ use App\Models\Categoria;
 class Producto extends Model
 {
     
-    protected $perPage = 10;
+    protected $perPage = 16;
 
     /**
      * The attributes that are mass assignable.

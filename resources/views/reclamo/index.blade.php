@@ -34,6 +34,11 @@
                                 </a>
                             </span>
                             <span id="card_title">
+                                <a href="{{ route('comprobantes.index') }}"   data-placement="left">
+                                  Comprobantes
+                                </a>
+                            </span>
+                            <span id="card_title">
                                 <a href="{{ route('contactos.index') }}"   data-placement="left">
                                   Contactos
                                 </a>
@@ -43,13 +48,6 @@
                                   Reclamos
                                 </a>
                             </span>
-
-                            <div class="float-right">
-                                <br>
-                                <a href="{{ route('reclamos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
-                                </a>
-                            </div>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))

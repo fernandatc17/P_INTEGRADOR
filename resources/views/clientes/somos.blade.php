@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-center section-title">Quiénes Somos</h1>
-                <p class="text-center">Somos una empresa dedicada a [inserte aquí la descripción de su empresa]. Con más de [inserte aquí el número] años de experiencia, nos enorgullece ofrecer productos/servicios de alta calidad a nuestros clientes.</p>
+                <p class="text-center">Somos una empresa dedicada a vender aparatos Tecnológicos . Con más de 8 años de experiencia, nos enorgullece ofrecer productos/servicios de alta calidad a nuestros clientes.</p>
             </div>
         </div>
         <div class="row">

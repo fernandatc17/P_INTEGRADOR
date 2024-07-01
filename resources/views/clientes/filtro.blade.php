@@ -5,7 +5,6 @@
 @endsection
 
 @section('content')
-
 <!-- BREADCRUMB -->
 <div id="breadcrumb" class="section">
 	<!-- container -->
@@ -22,7 +21,9 @@
 </div>
 <!-- /BREADCRUMB -->
 
-@foreach($productos as $producto)
+
+@forelse($productos as $producto)
+
 <div class="col-md-3 col-xs-6">
     <div class="product">
         <div class="product-img ">
@@ -47,7 +48,6 @@
         </div>
             
         <div class="add-to-cart">
-            
             <form action="{{ route('cart.add', $producto->id) }}" method="POST">
 				@csrf
                 <button type="submit" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Añadir al carrito</button>
@@ -57,8 +57,10 @@
     </div>
 
 </div>
+@empty
+    <p>No se encontraron productos para los filtros seleccionados.</p>
 
-@endforeach
+@endforelse
 
 
 @endsection

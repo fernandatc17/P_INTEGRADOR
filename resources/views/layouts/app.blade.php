@@ -33,7 +33,7 @@
  		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
  		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
  		<![endif]-->
-    </head>
+	</head>
 	<body>
 		<!-- HEADER -->
 		<header>
@@ -53,11 +53,20 @@
 						@endguest
 
 						@auth
-						    <li><a href="#"><i class="fa fa-user-o"></i>Mi Cuenta</a></li>
-						<form action="{{ route('logout')}}" method="POST">
-							@csrf
-							<button>Cerrar Sesión</button>
-						</form>
+							<li style="display: inline;">
+								<a href="#"><i class="fa fa-user-o"></i>Mi Cuenta</a> &nbsp;&nbsp;&nbsp;&nbsp;
+								<form action="{{ route('logout')}}" method="POST" style="display: inline;" >
+									@csrf
+									<button class="Btn1" style="display: inline; vertical-align: middle;" >
+										<div class="sign" style="display: inline;" >
+											<svg viewBox="0 0 512 512" >
+												<path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path>
+											</svg>
+										</div>
+										<div class="text" style="display: inline;" >Cerrar Sesión</div>
+									</button>
+								</form>
+							</li>
 						@endauth
 						
 					</ul>
@@ -84,17 +93,17 @@
 						<!-- SEARCH BAR -->
 						<div class="col-md-6">
 							<div class="header-search">
-								<form>
-									<select class="input-select">
-										<option value="0">All Categories</option>
+								<form action="{{ route('productos.filtrar') }}" method="GET">
+									<select class="input-select" name="categoria_id">
+										<option value="">Categorias</option>
 										<option value="1">Laptops</option>
 										<option value="2">Componentes</option>
 										<option value="3">Impresoras</option>
 										<option value="4">Periféricos</option>
-										<option value="5">Almacenamien</option>
+										<option value="5">Store</option>
 										<option value="6">Redes</option>
 									</select>
-									<input class="input" placeholder="Search here">
+									<input class="input" placeholder="Buscar ....">
 									<button class="search-btn">Search</button>
 								</form>
 							</div>
@@ -109,40 +118,20 @@
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
-										<span>Your Cart</span>
-										<div class="qty">5</div>
+										<span>Tu Carrito</span>
+										<div class="qty" id="cart-qty">0</div>
 									</a>
 									<div class="cart-dropdown">
-										<div class="cart-list">
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/product01.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">1x</span>S/.980.00</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
-
-											<div class="product-widget">
-												<div class="product-img">
-													<img src="./img/product02.png" alt="">
-												</div>
-												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
-													<h4 class="product-price"><span class="qty">3x</span>S/.980.00</h4>
-												</div>
-												<button class="delete"><i class="fa fa-close"></i></button>
-											</div>
+										<div class="cart-list" id="cart-list">
+											<!-- Productos del carrito se cargarán aquí -->
 										</div>
-										<div class="cart-summary">
-											<small>3 Item(s) selected</small>
-											<h5>SUBTOTAL: S/.2940.00</h5>
+										<div class="cart-summary" id="cart-summary">
+											<small id="cart-items-count">0 Item(s) seleccionados</small>
+											<h5>SUBTOTAL: <span id="cart-subtotal">S/.0.00</span></h5>
 										</div>
 										<div class="cart-btns">
-											<a href="#">View Cart</a>
-											<a href="/clientes/carrito">Verificar  <i class="fa fa-arrow-circle-right"></i></a>
+											<a href="{{ route('cart.index') }}">Ver Carrito</a>
+											<a href="{{ route('cart.index') }}">Verificar  <i class="fa fa-arrow-circle-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -177,11 +166,15 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
 						<li class="active"><a href="/">Inicio</a></li>
-						<li class="active"><a href="/clientesp">Productos</a></li>
+						<li ><a href="/clientesp">Productos</a></li>
 						<li><a href="/reclamos/create">Reclamos</a></li>
 						<li><a href="/clientes/somos">Quienes  Somos</a></li>
-						<li><a href="/admin">Administrador</a></li>
-						<li><a href="#">Contactanos</a></li>
+						@auth
+							@if(auth()->user()->rol == 1)
+							<li><a href="/admin">Administrador</a></li>
+							@endif
+						@endauth
+						<li><a href="/contactos/create">Contactanos</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -190,39 +183,41 @@
 			<!-- /container -->
 		</nav>
 		<!-- /NAVIGATION -->
-		
+	
 
 <!-- CONTENIDO -->
 
 @yield('content')
 <!-- FIN DE CONTENIDO -->
  
-
+    
 		<!-- NEWSLETTER -->
-		<div id="newsletter" class="section">
+		<div  class="section" id="newsletter" >
 			<!-- container -->
 			<div class="container">
+				
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12">
 						<div class="newsletter">
-							<p>Regístrate para el<strong>BOLETIN INFORMATIVO</strong></p>
+							<br><br><br>
+							<p>Regístrate para el <strong>BOLETIN INFORMATIVO</strong></p>
 							<form>
-								<input class="input" type="email" placeholder="Enter Your Email">
+								<input class="input" type="email" placeholder="Ingresa tu email">
 								<button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
 							</form>
 							<ul class="newsletter-follow">
 								<li>
-									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="https://es-la.facebook.com/"><i class="fa fa-facebook"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="https://x.com/es/home"><i class="fa fa-twitter"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="https://www.instagram.com/?hl=es"><i class="fa fa-instagram"></i></a>
 								</li>
 								<li>
-									<a href="#"><i class="fa fa-pinterest"></i></a>
+									<a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -245,7 +240,7 @@
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">Quienes Somos</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<p>Somos una empresa vanguardista que brinda productos tecnológicos</p>
 								<ul class="footer-links">
 									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
 									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
@@ -258,11 +253,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Categorias</h3>
 								<ul class="footer-links">
-									<li><a href="#">Las mejores ofertas</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Smartphones</a></li>
-									<li><a href="#">Cámaras</a></li>
-									<li><a href="#">Accesorios</a></li>
+									<li><a href="/clientesp">Las mejores ofertas</a></li>
+									<li><a href="/clientesp">Laptops</a></li>
+									<li><a href="/clientesp">Smartphones</a></li>
+									<li><a href="/clientesp">Cámaras</a></li>
+									<li><a href="/clientesp">Accesorios</a></li>
 								</ul>
 							</div>
 						</div>
@@ -273,11 +268,11 @@
 							<div class="footer">
 								<h3 class="footer-title">Información</h3>
 								<ul class="footer-links">
-									<li><a href="#">Quienes Somos</a></li>
+									<li><a href="/clientes/somos">Quienes Somos</a></li>
 									<li><a href="#">Contacta con nosotros</a></li>
 									<li><a href="#">política de privacidad</a></li>
 									<li><a href="#">Pedidos y Devoluciones</a></li>
-									<li><a href="#">Términos y condiciones</a></li>
+									<li><a href="https://www.macroplastics.com/images/docs/Terminos-y-Condiciones-de-Venta.pdf">Términos y condiciones</a></li>
 								</ul>
 							</div>
 						</div>
@@ -287,10 +282,10 @@
 								<h3 class="footer-title">Servicio</h3>
 								<ul class="footer-links">
 									<li><a href="#">Mi cuenta</a></li>
-									<li><a href="#">Ver carrito</a></li>
-									<li><a href="#">Lista de deseos</a></li>
-									<li><a href="#">Seguimiento de mi pedido</a></li>
-									<li><a href="#">Ayuda</a></li>
+									<li><a href="/cart">Ver carrito</a></li>
+									<li><a href="/cart">Lista de deseos</a></li>
+									<li><a href="/cart">Seguimiento de mi pedido</a></li>
+									<li><a href="/cart">Ayuda</a></li>
 								</ul>
 							</div>
 						</div>
@@ -315,11 +310,7 @@
 								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
 								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
 							</ul>
-							<span class="copyright">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;<script>document.write(new Date().getFullYear());</script>Todos los derechos reservados<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</span>
+
 						</div>
 					</div>
 						<!-- /row -->
@@ -337,6 +328,58 @@
 		<script src="{{asset('assets/js/nouislider.min.js')}}"></script>
 		<script src="{{asset('assets/js/jquery.zoom.min.js')}}"></script>
 		<script src="{{asset('assets/js/main.js')}}"></script>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			function updateCartDropdown() {
+				$.ajax({
+					url: "{{ route('cart.summary') }}",
+					method: 'GET',
+					success: function(data) {
+						$('#cart-qty').text(data.totalItems);
+						$('#cart-items-count').text(data.totalItems + ' Item(s) selected');
+						$('#cart-subtotal').text('S/.' + data.subtotal.toFixed(2));
+
+						let cartListHtml = '';
+						data.productos.forEach(function(producto) {
+							let quantity = data.cart[producto.id];
+							cartListHtml += `
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="#" alt="">
+									</div>
+									<div class="product-body">
+										<h3 class="product-name"><a href="#">${producto.nombre}</a></h3>
+										<h4 class="product-price"><span class="qty">${quantity}x</span>S/.${(producto.precio * quantity).toFixed(2)}</h4>
+									</div>
+									<button class="delete" onclick="removeFromCart(${producto.id})"><i class="fa fa-close"></i></button>
+								</div>
+							`;
+						});
+						$('#cart-list').html(cartListHtml);
+					}
+				});
+			}
+
+			updateCartDropdown();
+
+			// Puedes llamar a updateCartDropdown() cada vez que se actualice el carrito
+		});
+
+			function removeFromCart(productId) {
+				$.ajax({
+					url: "{{ route('cart.remove', '') }}/" + productId,
+					method: 'POST',
+					data: {
+						_token: "{{ csrf_token() }}"
+					},
+					success: function() {
+						updateCartDropdown();
+					}
+				});
+			}
+		</script>
 
 
 	</body>

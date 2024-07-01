@@ -13,14 +13,42 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Comprobantes') }}
+                                <a href="{{ route('categorias.index') }}"   data-placement="left">
+                                  Categoria
+                                </a>
+                            </span>
+                            <span id="card_title">
+                                <a href="{{ route('productos.index') }}"   data-placement="left">
+                                  Producto
+                                </a>
+                            </span>
+                            <span id="card_title">
+                                <a href="{{ route('producto-movimientos.index') }}"   data-placement="left">
+                                  Movimientos
+                                </a>
+                            </span>
+                            <span id="card_title">
+                                <a href="{{ route('ventas.index') }}"   data-placement="left">
+                                  Ventas
+                                </a>
+                            </span>
+                            <span id="card_title">
+                                <a href="{{ route('comprobantes.index') }}"   data-placement="left">
+                                  Comprobantes
+                                </a>
+                            </span>
+                            <span id="card_title">
+                                <a href="{{ route('contactos.index') }}"   data-placement="left">
+                                  Contactos
+                                </a>
+                            </span>
+                            <span id="card_title">
+                                <a href="{{ route('reclamos.index') }}"   data-placement="left">
+                                  Reclamos
+                                </a>
                             </span>
 
-                             <div class="float-right">
-                                <a href="{{ route('comprobantes.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
-                                </a>
-                              </div>
+
                         </div>
                     </div>
                     @if ($message = Session::get('success'))

@@ -36,6 +36,11 @@
                                 </a>
                             </span>
                             <span id="card_title">
+                                <a href="{{ route('comprobantes.index') }}"   data-placement="left">
+                                  Comprobantes
+                                </a>
+                            </span>
+                            <span id="card_title">
                                 <a href="{{ route('contactos.index') }}"   data-placement="left">
                                   Contactos
                                 </a>

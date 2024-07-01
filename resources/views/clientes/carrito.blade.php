@@ -29,7 +29,7 @@
 
 					<div class="col-md-7">
 						<!-- Billing Details -->
-						<div class="billing-details">
+						<!-- <div class="billing-details">
 							<div class="section-title">
 								<h3 class="title">Dirección de Envio</h3>
 							</div>
@@ -70,11 +70,11 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- /Billing Details -->
 
 						<!-- Shiping Details -->
-						<div class="shiping-details">
+						<!-- <div class="shiping-details">
 							<div class="section-title">
 								<h3 class="title">Dirección de envío</h3>
 							</div>
@@ -111,13 +111,13 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- /Shiping Details -->
 
 						<!-- Order notes -->
-						<div class="order-notes">
+						<!-- <div class="order-notes">
 							<textarea class="input" placeholder="Order Notes"></textarea>
-						</div>
+						</div> -->
 						<!-- /Order notes -->
 					</div>
 

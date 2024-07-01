@@ -30,15 +30,41 @@ class ProductoController extends Controller
         return view('clientes/index', compact('productos'));
     }
 
+    public function filtrar(Request $request)
+    {
+        // Obtener los parámetros de búsqueda
+        $categoriaId = $request->input('categoria_id');
+        $search = $request->input('search');
+
+        // Consultar los productos según los filtros
+        $query = Producto::query();
+
+        if ($categoriaId) {
+            $query->where('categoria_id', $categoriaId);
+        }
+
+        if ($search) {
+            $query->where('nombre', 'LIKE', "%{$search}%");
+        }
+
+        $productos = $query->get();
+
+        // Retornar la vista con los productos filtrados
+        return view('clientes/filtro', compact('productos'));
+    }
+
 
     public function somos(Request $request): View
     {
         return view('clientes/somos');
     }
+
     public function carrito(Request $request): View
     {
         return view('clientes/carrito');
     }
+
+    
     public function detalle($id): View
     {
         $producto = Producto::find($id);

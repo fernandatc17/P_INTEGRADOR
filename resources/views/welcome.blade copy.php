@@ -15,7 +15,7 @@
 							</div>
 							<div class="shop-body">
 								<h3>Laptop<br>Recopilación</h3>
-								<a href="/clientesp" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a>
+								<a href="#" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -29,7 +29,7 @@
 							</div>
 							<div class="shop-body">
 								<h3>Accessories<br>Recopilación</h3>
-								<a href="/clientesp" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a>
+								<a href="#" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -42,8 +42,8 @@
 								<img src="{{asset('assets/img/shop02.png')}}" alt="">
 							</div>
 							<div class="shop-body">
-								<h3>Cámaras<br>Recopilación</h3>
-								<a href="/clientesp" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a>
+								<h3>Cameras<br>Recopilación</h3>
+								<a href="#" class="cta-btn">Compra ahora<i class="fa fa-arrow-circle-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -66,14 +66,14 @@
 					<div class="col-md-12">
 						<div class="section-title">
 							<h3 class="title">Nuevos Productos</h3>
-							<!-- <div class="section-nav">
+							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab1">Laptops</a></li>
-									<li><a data-toggle="tab" href="#">Smartphones</a></li>
-									<li><a data-toggle="tab" href="#">Cameras</a></li>
-									<li><a data-toggle="tab" href="#">Accessoriesx</a></li>
+									<li><a data-toggle="tab" href="#">Componentes</a></li>
+									<li><a data-toggle="tab" href="#">Periféricos</a></li>
+									<li><a data-toggle="tab" href="#">Accessories</a></li>
 								</ul>
-							</div> -->
+							</div>
 						</div>
 					</div>
 					<!-- /section title -->
@@ -98,11 +98,10 @@
 											<div class="product-body">
 												<p class="product-category">Laptops</p>
 												<h3 class="product-name"><a href="#">Laptop Hp Ryzen 5 4500u</a></h3>
-												<h4 class="product-price">S/1980.00 <del class="product-old-price">S/.2000.00</del></h4>
+												<h4 class="product-price">S/1980.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
-
 											</div>
 										</div>
 										<!-- /product -->
@@ -119,7 +118,7 @@
 												<p class="product-category">Perifericos</p>
 												<h3 class="product-name"><a href="#">Auriculares Inalámbricos WH-CH520
 												</a></h3>
-												<h4 class="product-price">S/.680.00 <del class="product-old-price">S/.800.00</del></h4>
+												<h4 class="product-price">S/.680.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -135,7 +134,7 @@
 											<div class="product-body">
 												<p class="product-category">Laptops</p>
 												<h3 class="product-name"><a href="#">Macbook 14</a></h3>
-												<h4 class="product-price">S/.3980.00 <del class="product-old-price">S/.4000.00</del></h4>
+												<h4 class="product-price">S/.3980.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -146,12 +145,12 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="{{asset('assets/img/canon_pixma.png')}}" alt="">
+												<img src="{{asset('assets/img/product04.png')}}" alt="">
 											</div>
 											<div class="product-body">
 												<p class="product-category">Impresoras</p>
 												<h3 class="product-name"><a href="#">Canon Pixma G3170 </a></h3>
-												<h4 class="product-price">S/.680.00 <del class="product-old-price">S/.700.00</del></h4>
+												<h4 class="product-price">S/.680.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -209,7 +208,7 @@
 							</ul>
 							<h2 class="text-uppercase">Gran oferta esta semanak</h2>
 							<p>Nueva colección Hasta 25% de descuento</p>
-							<a class="primary-btn cta-btn" href="/clientesp">Compra ahora</a>
+							<a class="primary-btn cta-btn" href="#">Compra ahora</a>
 						</div>
 					</div>
 				</div>
@@ -230,14 +229,14 @@
 					<div class="col-md-12">
 						<div class="section-title">
 							<h3 class="title">Más vendidos</h3>
-							<!-- <div class="section-nav">
+							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
 									<li class="active"><a data-toggle="tab" href="#tab2">Laptops</a></li>
 									<li><a data-toggle="tab" href="#tab2">Smartphones</a></li>
 									<li><a data-toggle="tab" href="#tab2">Cameras</a></li>
 									<li><a data-toggle="tab" href="#tab2">Accessories</a></li>
 								</ul>
-							</div> -->
+							</div>
 						</div>
 					</div>
 					<!-- /section title -->
@@ -252,16 +251,16 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="{{asset('assets/img/Laptop_lenovo_thinkPad_12.png')}}" alt="">
+												<img src="{{asset('assets/img/product06.png')}}" alt="">
 												<div class="product-label">
 													<span class="sale">-30%</span>
 													<span class="new">NUEVO</span>
 												</div>
 											</div>
 											<div class="product-body">
-												<p class="product-category">Laptops</p>
-												<h3 class="product-name"><a href="#">Laptop lenovo thinkPad 12</a></h3>
-												<h4 class="product-price">S/.1870.00 <del class="product-old-price">S/.2000.00</del></h4>
+												<p class="product-category">Categoría</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">S/.1.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -272,15 +271,15 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="{{asset('assets/img/Epson_Expression_Premium_XP.png')}}" alt="">
+												<img src="{{asset('assets/img/product07.png')}}" alt="">
 												<div class="product-label">
 													<span class="new">NUEVO</span>
 												</div>
 											</div>
 											<div class="product-body">
-												<p class="product-category">Impresoras</p>
-												<h3 class="product-name"><a href="#">Epson Expression Premium XP</a></h3>
-												<h4 class="product-price">S/.250.00 <del class="product-old-price">S/.300.00</del></h4>
+												<p class="product-category">Categoría</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">S/.2.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -291,15 +290,15 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="{{asset('assets/img/Lenovo_Thinkpad_x1.png')}}" alt="">
+												<img src="{{asset('assets/img/product08.png')}}" alt="">
 												<div class="product-label">
 													<span class="sale">-30%</span>
 												</div>
 											</div>
 											<div class="product-body">
-												<p class="product-category">Laptops</p>
-												<h3 class="product-name"><a href="#">Lenovo Thinkpad x1</a></h3>
-												<h4 class="product-price">S/.1680.00 <del class="product-old-price">S/.2000.00</del></h4>
+												<p class="product-category">Categoría</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">S/.3.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -310,12 +309,12 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="{{asset('assets/img/Impresora_Inalámbrica_Epson.png')}}" alt="">
+												<img src="{{asset('assets/img/product09.png')}}" alt="">
 											</div>
 											<div class="product-body">
-												<p class="product-category">Impresoras</p>
-												<h3 class="product-name"><a href="#">Impresora Inalámbrica Epson</a></h3>
-												<h4 class="product-price">S/.450.00 <del class="product-old-price">S/.500.00</del></h4>
+												<p class="product-category">Categoría</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">S/.4.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -326,12 +325,12 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="{{asset('assets/img/Macbook_pro_12.png')}}" alt="">
+												<img src="{{asset('assets/img/product01.png')}}" alt="">
 											</div>
 											<div class="product-body">
-												<p class="product-category">Laptops</p>
-												<h3 class="product-name"><a href="#">Macbook pro 12</a></h3>
-												<h4 class="product-price">S/.4200.00 <del class="product-old-price">S/.5000.00</del></h4>
+												<p class="product-category">Categoría</p>
+												<h3 class="product-name"><a href="#">product name goes here</a></h3>
+												<h4 class="product-price">S/.5.00 <del class="product-old-price">S/.990.00</del></h4>
 											</div>
 											<div class="add-to-cart">
 												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> añadir al carrito</button>
@@ -372,12 +371,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Laptop_Dell_XPS.png')}}" alt="">
+										<img src="{{asset('assets/img/product07.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Laptops</p>
-										<h3 class="product-name"><a href="#">Laptop Dell XPS</a></h3>
-										<h4 class="product-price">S/.1200.00<del class="product-old-price">S/.1250.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -385,12 +384,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Procesador_Intel_i9-10900K.png')}}" alt="">
+										<img src="{{asset('assets/img/product08.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Componentes</p>
-										<h3 class="product-name"><a href="#">Procesador Intel i9-10900K</a></h3>
-										<h4 class="product-price">S/.500.00 <del class="product-old-price">S/.550.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -398,12 +397,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Impresora_HP_LaserJet_Pro.png')}}" alt="">
+										<img src="{{asset('assets/img/product09.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Impresoras</p>
-										<h3 class="product-name"><a href="#">Impresora HP LaserJet Pro</a></h3>
-										<h4 class="product-price">S/.250.00 <del class="product-old-price">S/.300.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -413,12 +412,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Teclado_Mecánico_Corsair_K95.png')}}" alt="">
+										<img src="{{asset('assets/img/product01.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Periféricos</p>
-										<h3 class="product-name"><a href="#">Teclado Mecánico Corsair K95</a></h3>
-										<h4 class="product-price">S/.360.00 <del class="product-old-price">S/.400.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -426,12 +425,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Disco_Duro_Externo_Seagate_2TB.png')}}" alt="">
+										<img src="{{asset('assets/img/product02.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Store</p>
-										<h3 class="product-name"><a href="#">Disco Duro Externo Seagate 2TB</a></h3>
-										<h4 class="product-price">S/.430.00 <del class="product-old-price">S/.500.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -439,12 +438,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Router_TP-Link_Archer_AX6000.png')}}" alt="">
+										<img src="{{asset('assets/img/product03.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Redes</p>
-										<h3 class="product-name"><a href="#">Router TP-Link Archer AX6000</a></h3>
-										<h4 class="product-price">S/.800.00 <del class="product-old-price">S/.850.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -465,12 +464,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/MacBook_Air_M1.png')}}" alt="">
+										<img src="{{asset('assets/img/product04.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Laptops</p>
-										<h3 class="product-name"><a href="#">MacBook Air M1</a></h3>
-										<h4 class="product-price">S/.4890.00 <del class="product-old-price">S/.5000.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -478,12 +477,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Procesador_AMD_Ryzen_9_5900X.png')}}" alt="">
+										<img src="{{asset('assets/img/product05.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Componentes</p>
-										<h3 class="product-name"><a href="#">Procesador AMD Ryzen 9 5900X</a></h3>
-										<h4 class="product-price">S/.640.00 <del class="product-old-price">S/.700.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -491,12 +490,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Impresora_Epson_EcoTank_ET-2760.png')}}" alt="">
+										<img src="{{asset('assets/img/product06.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Impresoras</p>
-										<h3 class="product-name"><a href="#">Impresora Epson EcoTank ET-2760</a></h3>
-										<h4 class="product-price">S/.480.00 <del class="product-old-price">S/.540.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -506,12 +505,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Mouse_Logitech_G502_Hero.png')}}" alt="">
+										<img src="{{asset('assets/img/product07.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Periféricos</p>
-										<h3 class="product-name"><a href="#">Mouse Logitech G502 Hero</a></h3>
-										<h4 class="product-price">S/.180.00 <del class="product-old-price">S/.290.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -519,12 +518,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/SSD_Samsung_970_EVO_1TB.png')}}" alt="">
+										<img src="{{asset('assets/img/product08.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Store</p>
-										<h3 class="product-name"><a href="#">SSD Samsung 970 EVO 1TB</a></h3>
-										<h4 class="product-price">S/.420.00 <del class="product-old-price">S/.460.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -532,11 +531,11 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/Router_ASUS_RT-AX89X.png')}}" alt="">
+										<img src="{{asset('assets/img/product09.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Redes</p>
-										<h3 class="product-name"><a href="#">Router ASUS RT-AX89X</a></h3>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
 										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
@@ -560,12 +559,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/HP_Spectre_x360.png')}}" alt="">
+										<img src="{{asset('assets/img/product01.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Laptops</p>
-										<h3 class="product-name"><a href="#">HP Spectre x360</a></h3>
-										<h4 class="product-price">S/.1299.00 <del class="product-old-price">S/.4009.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -573,12 +572,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/nvidia_rtx_3080.png')}}"p alt="">
+										<img src="{{asset('assets/img/product02.png')}}"p alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Componentes</p>
-										<h3 class="product-name"><a href="#">Tarjeta Gráfica NVIDIA RTX 3080</a></h3>
-										<h4 class="product-price">S/.7800.00 <del class="product-old-price">S/.9000.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -586,11 +585,11 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/razer_blackwidow.png')}}" alt="">
+										<img src="{{asset('assets/img/product03.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Impresoras</p>
-										<h3 class="product-name"><a href="#">Impresora Canon PIXMA TS8320</a></h3>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
 										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
@@ -601,12 +600,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/razer_blackwidow.png')}}" alt="">
+										<img src="{{asset('assets/img/product04.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Periféricos</p>
-										<h3 class="product-name"><a href="#">Teclado Razer BlackWidow Elite</a></h3>
-										<h4 class="product-price">S/.1680.00 <del class="product-old-price">S/.2000.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -614,12 +613,12 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/western_digital_4tb.png')}}" alt="">
+										<img src="{{asset('assets/img/product05.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Store</p>
-										<h3 class="product-name"><a href="#">Disco Duro Externo WD Elements 4TB</a></h3>
-										<h4 class="product-price">S/.260.00 <del class="product-old-price">S/.300.00</del></h4>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
+										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -627,18 +626,18 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{asset('assets/img/netgear_nighthawk.png')}}" alt="">
+										<img src="{{asset('assets/img/product06.png')}}" alt="">
 									</div>
 									<div class="product-body">
-										<p class="product-category">Redes</p>
-										<h3 class="product-name"><a href="#">Router NETGEAR Nighthawk X10</a></h3>
+										<p class="product-category">Categoría</p>
+										<h3 class="product-name"><a href="#">product name goes here</a></h3>
 										<h4 class="product-price">S/.980.00 <del class="product-old-price">S/.990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
 							</div>
 						</div>
-					</div>	
+					</div>
 
 				</div>
 				<!-- /row -->

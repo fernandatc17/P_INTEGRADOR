@@ -33,6 +33,11 @@
                                 </a>
                             </span>
                             <span id="card_title">
+                                <a href="{{ route('comprobantes.index') }}"   data-placement="left">
+                                  Comprobantes
+                                </a>
+                            </span>
+                            <span id="card_title">
                                 <a href="{{ route('contactos.index') }}"   data-placement="left">
                                   Contactos
                                 </a>
@@ -77,7 +82,7 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-										<td >{{ $venta->cliente_id }}</td>
+										<td >{{ $venta->cliente->datos }}</td>
 										<td >{{ $venta->fecha_venta }}</td>
 										<td >{{ $venta->monto }}</td>
 										<td >{{ $venta->metodo_pago }}</td>

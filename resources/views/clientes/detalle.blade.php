@@ -36,13 +36,13 @@
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star-o"></i>
 								</div>
-								<a class="review-link" href="#">10 Review(s) | Add your review</a>
+								<a class="review-link" href="#">10 Opinion(s) | Agrega tu opinión</a>
 							</div>
 							<div>
 								<h3 class="product-price">$ {{ $producto->stock }}.00</h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p>{{ $producto->especificacion }}</p>
+							<p>{{ $producto->descripcion }}</p>
 
 							<div class="add-to-cart">
 								<div class="qty-label">
@@ -53,7 +53,14 @@
 										<span class="qty-down">-</span>
 									</div>
 								</div>
-								<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+								<div class="add-to-cart">
+									<br><br>
+            
+									<form action="{{ route('cart.add', $producto->id) }}" method="POST">
+										@csrf
+										<button type="submit" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Añadir al carrito</button>
+									</form>
+								</div>
 							</div>
 							
 						</div>
@@ -76,7 +83,7 @@
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>{{ $producto->especificacion }}</p>
 										</div>
 									</div>
 								</div>
@@ -86,7 +93,7 @@
 								<div id="tab2" class="tab-pane fade in">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p>{{ $producto->especificacion }}</p>
 										</div>
 									</div>
 								</div>
@@ -196,7 +203,7 @@
 															</div>
 														</div>
 														<div class="review-body">
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+															<p><Samp></Samp>i bien el mouse tiene un diseño sólido, encuentro que la ergonomía podría mejorarse. Después de largas horas de uso, noto que la forma podría ser más cómoda para reducir la fatiga en la mano.</p>
 														</div>
 													</li>
 													<li>
@@ -212,12 +219,12 @@
 															</div>
 														</div>
 														<div class="review-body">
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+															<p>Me hubiera gustado que el mouse fuera más compatible con diferentes sistemas operativos. Tuve algunos problemas al intentar configurarlo en mi sistema operativo menos común, lo que podría ser un inconveniente para otros usuarios.</p>
 														</div>
 													</li>
 													<li>
 														<div class="review-heading">
-															<h5 class="name">John</h5>
+															<h5 class="name">Jeremias</h5>
 															<p class="date">27 DEC 2018, 8:0 PM</p>
 															<div class="review-rating">
 																<i class="fa fa-star"></i>
@@ -228,7 +235,7 @@
 															</div>
 														</div>
 														<div class="review-body">
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+															<p>Estoy un poco decepcionado con la calidad del cable suministrado. En ocasiones he experimentado desconexiones intermitentes debido a lo delgado que parece ser el cable. </p>
 														</div>
 													</li>
 												</ul>

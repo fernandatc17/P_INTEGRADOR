@@ -11,6 +11,7 @@ use App\Http\Controllers\ComprobanteController;
 use App\Http\Controllers\ReclamoController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\CartController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,17 +20,23 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/admin', [ProductoController::class, 'index']);
+//Rutas prueba--------------------------------
+Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+Route::post('/cart/add/{id}', [CartController::class, 'add'])->name('cart.add');
+Route::post('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
+
+Route::get('/cart/summary', [CartController::class, 'getCartSummary'])->name('cart.summary');
 
 
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 #Rutas para productos 
 Route::get('/clientesp', [ProductoController::class, 'index2']);
 // Route::get('/clientesp/reclamos', [ReclamoController::class, 'reclamos']);
 Route::get('/clientes/somos', [ProductoController::class, 'somos']);
 Route::get('/clientes/carrito', [ProductoController::class, 'carrito']);
 Route::get('/clientes/detalle/{id}', [ProductoController::class, 'detalle']);
-
+Route::get('/productos/filtrar', [ProductoController::class, 'filtrar'])->name('productos.filtrar');
 
 Route::get('/productos', [ProductoController::class, 'index'])->name('productos.index');
 Route::get('/productos/create', [ProductoController::class, 'create'])->name('productos.create');
@@ -40,7 +47,6 @@ Route::get('/productos/show/{id}', [ProductoController::class, 'show'])->name('p
 Route::get('/productos/delete/{id}', [ProductoController::class, 'destroy'])->name('productos.destroy');
 
 #Rutas para categorias 
-// Route::resource('categorias', CategoriaController::class);
 
 Route::get('/categorias', [CategoriaController::class, 'index'])->name('categorias.index');
 Route::get('/categorias/create', [CategoriaController::class, 'create'])->name('categorias.create');
@@ -51,7 +57,7 @@ Route::get('/categorias/show/{id}', [CategoriaController::class, 'show'])->name(
 Route::get('/categorias/delete/{id}', [CategoriaController::class, 'destroy'])->name('categorias.destroy');
 
 #Rutas para categorias 
-// Route::resource('producto-movimientos', ProductoMovimientoController::class);
+
 
 Route::get('/producto-movimientos', [ProductoMovimientoController::class, 'index'])->name('producto-movimientos.index');
 Route::get('/producto-movimientos/create', [ProductoMovimientoController::class, 'create'])->name('producto-movimientos.create');
@@ -62,7 +68,7 @@ Route::get('/producto-movimientos/show/{id}', [ProductoMovimientoController::cla
 Route::get('/producto-movimientos/delete/{id}', [ProductoMovimientoController::class, 'destroy'])->name('producto-movimientos.destroy');
 
 #Rutas para ventas 
-// Route::resource('ventas', VentaController::class);
+
 
 Route::get('/ventas', [VentaController::class, 'index'])->name('ventas.index');
 Route::get('/ventas/create', [VentaController::class, 'create'])->name('ventas.create');
@@ -73,7 +79,7 @@ Route::get('/ventas/show/{id}', [VentaController::class, 'show'])->name('ventas.
 Route::get('/ventas/delete/{id}', [VentaController::class, 'destroy'])->name('ventas.destroy');
 
 #Rutas para venta-detalle
-// Route::resource('venta_detalles', VentaDetalleController::class);
+
 Route::get('/venta_detalles', [VentaDetalleController::class, 'index'])->name('venta_detalles.index');
 Route::get('/venta_detalles/create', [VentaDetalleController::class, 'create'])->name('venta_detalles.create');
 Route::post('/venta_detalles/store', [VentaDetalleController::class, 'store'])->name('venta_detalles.store');
@@ -83,7 +89,7 @@ Route::get('/venta_detalles/show/{id}', [VentaDetalleController::class, 'show'])
 Route::get('/venta_detalles/delete/{id}', [VentaDetalleController::class, 'destroy'])->name('venta_detalles.destroy');
 
 #Rutas para comprobantes
-// Route::resource('comprobantes', ComprobanteController::class);
+
 Route::get('/comprobantes', [ComprobanteController::class, 'index'])->name('comprobantes.index');
 Route::get('/comprobantes/create', [ComprobanteController::class, 'create'])->name('comprobantes.create');
 Route::post('/comprobantes/store', [ComprobanteController::class, 'store'])->name('comprobantes.store');
@@ -112,7 +118,13 @@ Route::post('/clientes/update', [ClienteController::class, 'update'])->name('cli
 Route::get('/clientes/show/{id}', [ClienteController::class, 'show'])->name('clientes.show');
 Route::get('/clientes/delete/{id}', [ClienteController::class, 'destroy'])->name('clientes.destroy');
 
-Route::resource('contactos', ContactoController::class);
 
+Route::get('/contactos', [ContactoController::class, 'index'])->name('contactos.index');
+Route::get('/contactos/create', [ContactoController::class, 'create'])->name('contactos.create');
+Route::post('/contactos/store', [ContactoController::class, 'store'])->name('contactos.store');
+Route::get('/contactos/edit/{id}', [ContactoController::class, 'edit'])->name('contactos.edit');
+Route::post('/contactos/update', [ContactoController::class, 'update'])->name('contactos.update');
+Route::get('/contactos/show/{id}', [ContactoController::class, 'show'])->name('contactos.show');
+Route::get('/contactos/delete/{id}', [ContactoController::class, 'destroy'])->name('contactos.destroy');
 
 

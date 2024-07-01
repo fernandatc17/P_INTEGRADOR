@@ -16,11 +16,6 @@
                                 {{ __('Venta Detalles') }}
                             </span>
 
-                             <div class="float-right">
-                                <a href="{{ route('venta-detalles.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
-                                </a>
-                              </div>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
